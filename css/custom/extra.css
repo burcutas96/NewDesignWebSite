@@ -1,3 +1,4 @@
+/* Header */
 header.backImage{
     background-image: url("../../img/header.jpeg");
     background-attachment: scroll;       /*background-attachment özelliği, bir arka plan görüntüsünün sayfanın*/
@@ -24,6 +25,8 @@ header.backImage .backImage-heading{
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+/* Navbar */
 #mainNavbar{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -46,9 +49,29 @@ header.backImage .backImage-heading{
     letter-spacing: 0.06em;
 }
 
-#mainNavbar .navbar-nav .nav-item .nav-link:active,
+#mainNavbar .navbar-nav .nav-item .nav-link.active,
 #mainNavbar .navbar-nav .nav-item .nav-link:hover{
     color: #fa836a;
+}
+
+
+/* Services */
+.mySection{
+    padding: 5rem 0;
+}
+
+.mySection h2.s-heading{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.mySection h3.s-subheading{
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    font-family: "Roboto Slab", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media (max-width:991.98px) {
@@ -78,7 +101,7 @@ header.backImage .backImage-heading{
         padding-bottom: 1.5rem;
         border: none;
         background-color: transparent;
-        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     #mainNavbar .navbar-nav .nav-item{
@@ -91,7 +114,7 @@ header.backImage .backImage-heading{
 
     #mainNavbar.navbar-mobile .navbar-brand{
         font-size: 1.20em;
-        transition: font-size 0.3s ease-in-out
+        transition: font-size 0.3s ease-in-out;
     }
 
     #mainNavbar.navbar-mobile{

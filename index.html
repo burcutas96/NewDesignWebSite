@@ -12,10 +12,13 @@
     <title>New Design</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/extra.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
-    <!-- navigation -->
 
+
+<body id="page-body">
+
+    <!-- navigation -->
     <!-- navbar-expand-lg class'ı ile navbar'ım large ekranın altına geldiğinde container'ın içindeki buton yani toggler görünmüş olacak. -->
     <!-- navbar-brand class'ı şirketinizin, ürününüzün veya projenizin adı, markası içindir. -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
@@ -28,17 +31,17 @@
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="myLabel">Menü</h5>
+                    <h5 class="offcanvas-title" id="myLabel"><a href="#page-body" class="nav-link btn-close-canvas">Menu</a></h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="kapat"></button>
                 </div>
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-auto text-uppercase py-lg-2">
-                        <li class="nav-item"><a href="#services" class="nav-link">Servisler</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portföy</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">Hakkımızda</a></li>
-                        <li class="nav-item"><a href="#team" class="nav-link">Ekip</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link btn-close-canvas">services</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link btn-close-canvas">portfolio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link btn-close-canvas">about us</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link btn-close-canvas">Team</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link btn-close-canvas">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,16 +49,68 @@
     </nav>
 
 
-
     <!-- header -->
     <header class="backImage text-white text-center">
         <div class="container">
-            <div class="backImage-sub mb-3">Stüdyomuza Hoş Geldin!</div>
-            <div class="backImage-heading text-uppercase">Tanıştığımıza Memnun Olduk.</div>
-            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha Fazla Anlat</a>
+            <div class="backImage-sub mb-3">Welcome to our studio</div>
+            <div class="backImage-heading text-uppercase">nice to meet you!</div>
+            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Tell More</a>
         </div>
     </header>
 
+
+    <!-- services -->
+    <section id="services" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold">services</h2>
+                <h3 class="s-subheading text-muted">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, esse.
+                </h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-danger text-white d-flex 
+                        align-items-center justify-content-center m-auto" 
+                        style="width: 7rem; height: 7rem;" aria-hidden="true">
+                        <i class="bi bi-cart" style="font-size: 4rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold">E-ticaret</h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, fuga 
+                        harum quae placeat iure consequatur laboriosam recusandae unde reiciendis 
+                        deleniti, suscipit sint facere aliquam iusto excepturi ipsum odit officia nihil?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-danger text-white d-flex 
+                        align-items-center justify-content-center m-auto" 
+                        style="width: 7rem; height: 7rem;" aria-hidden="true">
+                        <i class="bi bi-laptop" style="font-size: 4rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold">Duyarlı Tasarım</h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, fuga 
+                        harum quae placeat iure consequatur laboriosam recusandae unde reiciendis 
+                        deleniti, suscipit sint facere aliquam iusto excepturi ipsum odit officia nihil?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-danger text-white d-flex 
+                        align-items-center justify-content-center m-auto" 
+                        style="width: 7rem; height: 7rem;" aria-hidden="true">
+                        <i class="bi bi-shield-lock" style="font-size: 4rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold">Web Güvenliği</h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, fuga 
+                        harum quae placeat iure consequatur laboriosam recusandae unde reiciendis 
+                        deleniti, suscipit sint facere aliquam iusto excepturi ipsum odit officia nihil?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/custom/extra.js"></script>
