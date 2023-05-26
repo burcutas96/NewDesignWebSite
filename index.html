@@ -10,11 +10,44 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <title>New Design</title>
-    <style>
-        @import url("css/all.css");
-    </style>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/extra.css">
 </head>
 <body>
+    <!-- navigation -->
+
+    <!-- navbar-expand-lg class'ı ile navbar'ım large ekranın altına geldiğinde container'ın içindeki buton yani toggler görünmüş olacak. -->
+    <!-- navbar-brand class'ı şirketinizin, ürününüzün veya projenizin adı, markası içindir. -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a href="#page-body" class="navbar-brand text-uppercase" title="new design website link">New Design</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar" aria-controls="myNavbar"
+                aria-label="menüyü açma kapatma butonu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="myLabel">Menü</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="kapat"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto text-uppercase py-lg-2">
+                        <li class="nav-item"><a href="#services" class="nav-link">Servisler</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portföy</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">Hakkımızda</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link">Ekip</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- header -->
     <header class="backImage text-white text-center">
         <div class="container">
             <div class="backImage-sub mb-3">Stüdyomuza Hoş Geldin!</div>
@@ -22,6 +55,7 @@
             <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha Fazla Anlat</a>
         </div>
     </header>
+
 
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/custom/extra.js"></script>
