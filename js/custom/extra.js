@@ -25,6 +25,7 @@ window.addEventListener("DOMContentLoaded", event=>{
 });
 
 
+
 //Sayfaki .btn-close-canvas classlarına sahip elemanları bulacak.
 //Daha sonra bu elemanlara tek tek click event'i eklenecek.
 //Yani .btn-close-canvas class'ına sahip olan elemanlara tıklandığında bir fonksiyon gerçekleştirilecek.

@@ -17,7 +17,7 @@ header.backImage .backImage-sub{
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-style: italic;
-    font-family: "Roboto-Slab" system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Roboto-Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -26,7 +26,7 @@ header.backImage .backImage-heading{
     font-weight: 700;
     line-height: 3rem;
     margin-bottom: 2rem;
-    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -40,14 +40,14 @@ header.backImage .backImage-heading{
 
 #mainNavbar .navbar-brand{
     color: #de3545;
-    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     letter-spacing: .063em;
 }
 
 #mainNavbar .navbar-nav .nav-item .nav-link{
-    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     color: #fff;
@@ -69,13 +69,15 @@ header.backImage .backImage-heading{
     font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .mySection h3.s-subheading{
     font-size: 1rem;
     font-weight: 600;
     font-style: italic;
-    font-family: "Roboto Slab", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -116,7 +118,7 @@ header.backImage .backImage-heading{
 
 #portfolio .p-item .p-caption .pc-heading{
     font-size: 1.45rem;
-    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 0;
     font-weight: 700;
@@ -124,8 +126,85 @@ header.backImage .backImage-heading{
 
 #portfolio .p-item .p-caption .pc-subheading{
     font-size: 1rem;
-    font-family: "Roboto Slab", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* About */
+.timeline{
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1px;
+    content: "";
+    background-color: #dadde0;
+}
+
+.timeline>li{
+    margin-bottom: 50px;
+}
+
+.timeline>li::after,
+.timeline>li::before{
+    display: table;
+    content: "";
+}
+
+.timeline>li::after{
+    clear: both;
+}
+
+.timeline>li .t-panel{
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .t-image{
+    position: absolute;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #dadde0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.timeline>li .t-image:last-child{
+    background-color: #de3545;
+}
+
+.timeline>li .t-image h4{
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 20px;
+}
+
+.timeline .t-heading h4{
+    margin-top: 0;
+    color: inherit;
+    font-weight: bold;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.timeline .t-body>ul,
+.timeline .t-body>p{
+    margin-bottom: 0;
 }
 
 
@@ -189,6 +268,46 @@ header.backImage .backImage-heading{
 }
 
 
+@media (min-width: 768px) {
+    .timeline::before{
+        left: 50%;
+    }
+
+    .timeline>li{
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    .timeline>li .t-panel{
+        float: left;
+        width: 40%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .t-image{
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .t-image h4{
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 25px;
+        margin-left: 2px;
+    }
+
+    .timeline>li.t-inverted>.t-panel{
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+
+
 @media (min-width:992px) {
     header.backImage{
         padding-top: 15rem;
@@ -221,7 +340,64 @@ header.backImage .backImage-heading{
         padding-bottom: 1rem;
         background-color: #212529;
     }
+
+    .timeline::before{
+        width: 4px;
+    }
+
+    .timeline>li{
+        min-height: 150px;
+    }
+
+    .timeline>li .t-panel{
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .t-image{
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .t-image h4{
+        font-size: 19px;
+        line-height: 25px;
+        margin-top: 37px;
+        margin-left: 0;
+    }
+
+    .timeline>li.t-inverted>.t-panel{
+        padding: 0 20px 20px;
+    }
 }
+
+
+@media (min-width:1200px) {
+    .timeline>li{
+        min-height: 170px;
+    }
+
+    .timeline>li .t-panel{
+        padding: 0 20px 20px 10px;
+    }
+
+    .timeline>li .t-image{
+        width: 180px;
+        height: 180px;
+        margin-left: -90px;
+    }
+
+    .timeline>li .t-image h4{
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 45px;
+    }
+
+    .timeline>li.t-inverted>.t-panel{
+        padding: 0 100px 20px 20px;
+    }
+}
+
 
 
 
