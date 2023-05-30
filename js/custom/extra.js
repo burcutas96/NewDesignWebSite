@@ -36,3 +36,24 @@ for (let i = 0; i < BtnCanvas.length; i++) {
         document.querySelector('[data-bs-dismiss="offcanvas"]').click();
     });
 }
+
+
+
+//Chrome tarayıcılarda ve large'ın altındaki ekranlarda offcanvas ile açılan navbar,
+//seçilen bölüme giderken scroll-behavior: smooth özelliğini çalıştıramadığı için
+//küçük ekranlarda tetiklenecek olan scroll-behavior: auto özelliğini aktif hale getirdim.
+
+function checkScreenWidth(){
+    var element = document.documentElement;;
+    if(window.innerWidth < 991.98){
+        if (navigator.userAgent.indexOf("Chrome") != -1) {    
+            element.classList.add("chrome-scroll");
+        }
+    }
+    else if (element.classList.contains("chrome-scroll")){
+        element.classList.remove("chrome-scroll");
+    }
+}
+checkScreenWidth();
+window.addEventListener("resize", checkScreenWidth);
+
