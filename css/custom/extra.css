@@ -249,6 +249,33 @@ header.backImage .backImage-heading{
 }
 
 
+/* Contact */
+#contact{
+    background-color: #432630;
+    background-repeat: no-repeat;
+    background-image: url(../../img/map.png);
+    background-position: center;
+}
+
+#contact input{
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+#contact .form-textarea{
+    height: 91.5%;
+}
+
+#contact .form-textarea textarea{
+    height: 100%;
+    min-height: 10rem;
+}
+
+#contact .form-control:focus{
+    box-shadow: 1px 1px 12px #ff0059;
+}
+
+
 /* Portfolio Modal */
 .p-modal .modal-dialog{
     margin: 1rem;

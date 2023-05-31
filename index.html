@@ -435,6 +435,54 @@
     </div>
 
 
+    <!-- contact -->
+    <section id="contact" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold text-white">About</h2>
+                <h3 class="s-subheading text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ab.
+                </h3>
+            </div>
+
+            <!-- Doğrulama kontrollerini html'in yapmasını istemiyorum. Ben kendim js ile bunu yapacağım. -->
+            <form id="FrmContact" novalidate>
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                            <input type="text" id="name" class="form-control" placeholder="Adınız" required>
+                            <label for="name">Adınız</label>
+                            <div class="invalid-feedback" id="ErrName"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" id="email" class="form-control" placeholder="E-posta" required>
+                            <label for="email">E-posta Adresiniz</label>
+                            <div class="invalid-feedback" id="ErrEmail"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="tel" id="phone" class="form-control" placeholder="Telefon" required>
+                            <label for="phone">Telefon Numaranız</label>
+                            <div class="invalid-feedback" id="ErrPhone"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating form-textarea">
+                            <textarea id="message" class="form-control" placeholder="Mesajınız" required></textarea>
+                            <label for="message">Mesajınız</label>
+                            <div class="invalid-feedback" id="ErrMessage"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3">
+                        Mesaj Gönder
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
     <!-- portfolio modal -->
     <div class="modal fade p-modal" id="PModal1" tabindex="-1" role="dialog" 
         aria-labelledby="myTitle1" aria-hidden="true">
